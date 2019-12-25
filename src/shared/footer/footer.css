@@ -1,0 +1,26 @@
+main#footer{
+    background-color: rgba(0, 255, 0, 0.90);
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+div#footer-text{
+    background-color: rgba(0, 0, 0, 0.90);
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+a#text-element{
+    color:white;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#text-element:hover {
+    color: blue;
+}

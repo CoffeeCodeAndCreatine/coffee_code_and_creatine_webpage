@@ -1,0 +1,378 @@
+main#home-container{
+    background-color: rgba(31, 31, 31, 1.0);
+    top: 100px;
+    bottom: 50px;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
+div#spacer{
+    height:75px;
+}
+
+container#hc{
+    overflow: auto;
+}
+
+div#home-mission{
+    background: url('../assets/images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    color:white;
+    padding-top: 50px;
+}
+
+div#top-text{
+    height: 175px;
+    text-align: center;
+    color:white;
+    font-size: 45px;
+}
+
+div#bottom-text{
+    height:175px;
+    text-align: center;
+    color:white;
+    padding-top: 0px;
+
+}
+
+div#top-coffee{
+    background-color: rgba(244, 244, 244, 1.0);
+    height: 200px;
+}
+div#top-code{
+    background-color: rgba(31, 31, 31, 1.0);
+    height: 100px;
+
+}
+div#top-creatine{
+    background-color: rgba(244, 244, 244, 1.0);
+    height: 100px;
+
+}
+div#blue{
+    background-color: blue;
+    height:5px;
+
+}
+
+
+
+
+
+
+container#home-container{
+    background-color: rgba(31, 31, 31, 1.0);
+    top: 100px;
+    bottom: 50px;
+    width:100%;
+}
+
+
+
+
+div#home-mission{
+
+}
+
+main#home-search {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 1fr;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* Hero Search Styles */
+section#hero-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hero-search header {
+    text-align: center;
+    margin-top: 80px;
+}
+
+section#hero-search header h1 {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+section#doss-input-display {
+    text-align: center;
+    max-width: 550px;
+}
+
+section#doss-search-buttons {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: auto;
+
+}
+
+section#doss-search-buttons > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mic-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.95s ease-in-out;
+}
+
+.btn-ring {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 40px;
+    transition: all 0.25s linear;
+    opacity: 0;
+}
+
+.btn-ring.radiating {
+    animation: radiating-keyframes 1.5s infinite ease-in-out;
+    -webkit-animation: radiating-keyframes 1.5s infinite ease-in-out;
+}
+
+.btn-ring button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-search-btn {
+    margin-bottom: 20px;
+    animation: upRightUp-keyframes 0.95s ease-in-out;
+    -webkit-animation: upRightUp-keyframes 0.95s ease-in-out;
+    transition: all 0.95s ease-in-out;
+}
+
+.active-search-btn img {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+
+.passive-search-btn {
+    animation: downLeftDown-keyframes 0.95s ease-in-out;
+    -webkit-animation: downLeftDown-keyframes 0.95s ease-in-out;
+    transition: all 0.95s ease-in-out;
+    transform: translateY(90px);
+}
+
+.passive-search-btn img {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+
+.passive-search-btn img.show {
+    height: 45px;
+    width: 45px;
+}
+
+.active-search-btn img.show {
+    height: 80px;
+    width: 80px;
+}
+
+.passive-search-btn img.show,
+.active-search-btn img.show {
+    opacity: 1;
+}
+
+section#hero-search-type-toggle {
+    margin-bottom: 20px;
+}
+
+section#traditional-search-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section#traditional-search-buttons button {
+    margin-right: 20px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: white;
+    width: 100px;
+    background: none;
+    border: none;
+    text-transform: inherit;
+    animation: none;
+}
+
+Button#brs-button {
+
+}
+
+section#traditional-search-buttons button:last-child {
+    margin-right: 0;
+}
+
+section#traditional-search-input {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin-top: 95px;
+    margin-bottom: 180px;
+}
+
+section#traditional-search-input img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 5px;
+}
+
+section#traditional-search-input input {
+    height: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+section#search-dot-loader {
+    width: 200px;
+    margin-top: 40px;
+}
+
+.loading-dots--dot {
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.loading-dots--dot:last-child {
+    margin-right: 0;
+}
+
+#doss-search-text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+#doss-search-text-field input {
+    width: 100%;
+    height: 45px;
+    color: rgba(255, 255, 3, 1);
+    font-size: 45px;
+}
+
+/*Jacob Notes*/
+Section#toggle-search-type {
+    padding-top: 250px;
+    margin-bottom: 20px;
+}
+
+Button#toggle-search-type {
+    width: 220px;
+    border: 1px solid white;
+    color: white;
+    text-transform: inherit;
+}
+
+#doss-button-container {
+    text-align: center;
+}
+
+#doss-state-button {
+    display: inline-block;
+}
+
+#doss-search-text-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+#doss-search-text-input input {
+    width: 100%;
+    height: 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 45px;
+}
+
+.hidden-input {
+    background: none;
+    color: white;
+    border: none;
+    padding-bottom: 50px;
+}
+
+.hidden-input:focus {
+    outline: none;
+}
+
+.hidden-input-2 {
+    background: none;
+    color: white;
+    padding-bottom: 50px;
+    border: 1px solid;
+    border-color: white;
+}
+
+.hidden-input-2:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .75);
+}
+
+#doss-conversation-response {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+#doss-conversation-response text {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+}
+
